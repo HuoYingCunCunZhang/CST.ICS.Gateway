@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway", "CST.ICS.Gateway\CST.ICS.Gateway.csproj", "{8C722669-E0F1-4D63-9ACA-71C7E1165CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Common", "01.Common", "{C202A0AE-8F76-4C14-BE4F-DB0DF1BB2A02}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Device", "03.Device", "{E906C5C8-91ED-4599-9E2E-501F26B5F6D1}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Command", "04.Command", "{9B029CE1-9A77-425F-9663-DD51E7760C7D}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Model", "02.Model", "{94553739-7F42-4F82-837D-107BF0F1FA35}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.App", "05.App", "{A89B21C4-A86C-4AC8-8DA0-C7BD78DFAE19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C722669-E0F1-4D63-9ACA-71C7E1165CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C722669-E0F1-4D63-9ACA-71C7E1165CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C722669-E0F1-4D63-9ACA-71C7E1165CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C722669-E0F1-4D63-9ACA-71C7E1165CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C722669-E0F1-4D63-9ACA-71C7E1165CE1} = {A89B21C4-A86C-4AC8-8DA0-C7BD78DFAE19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7423CFF4-9260-4C4E-B80D-8720E35B758C}
+	EndGlobalSection
+EndGlobal
