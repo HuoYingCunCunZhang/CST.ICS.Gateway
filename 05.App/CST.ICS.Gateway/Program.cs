@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Serilog;
 using Serilog.Events;
 using System.Reflection;
@@ -36,6 +37,7 @@ namespace CST.ICS.Gateway
                     .Where(cc => cc.Name.EndsWith("Engine"))
                     .SingleInstance()
                     .AsImplementedInterfaces();
+                    builder.RegisterType<PhysicalFileProvider>().As<IFileProvider>().WithParameter(new TypedParameter(typeof(string), AppDomain.CurrentDomain.BaseDirectory)); ;
 
                 })
                 .UseSerilog((context, logger) =>//×¢²áSerilog
