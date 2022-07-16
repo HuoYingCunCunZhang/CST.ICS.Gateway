@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    <PackageReference Include="MQTTnet" Version="4.0.2.221" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj" />
+    <ProjectReference Include="..\..\02.Model\CST.ICS.Gateway.Model\CST.ICS.Gateway.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GDZ9.Model.ICS.Business">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="GDZ9.Model.ICS.Common">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GDZ9.Model.ICS.Param">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Param.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

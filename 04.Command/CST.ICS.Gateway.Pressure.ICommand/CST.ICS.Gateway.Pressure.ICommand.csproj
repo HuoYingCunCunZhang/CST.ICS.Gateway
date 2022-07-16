@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GDZ9.Model.ICS.Business">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Domain">
+      <HintPath>..\..\Libs\Xmas11.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

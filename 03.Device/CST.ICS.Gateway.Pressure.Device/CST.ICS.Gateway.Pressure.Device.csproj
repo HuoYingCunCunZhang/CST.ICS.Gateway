@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CST.ICS.Gateway.Pressure.IDevice\CST.ICS.Gateway.Pressure.IDevice.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GDZ9.Model.ICS.Common">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="GDZ9.Model.ICS.Param">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Param.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Common">
+      <HintPath>..\..\Libs\Xmas11.Comm.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Core">
+      <HintPath>..\..\Libs\Xmas11.Comm.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.CDP">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.CDP.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.DPS">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.DPS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.DPSEX">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.DPSEX.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.Fluke7050">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.Fluke7050.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.HarDy">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.HarDy.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.Devices.MPC">
+      <HintPath>..\..\Libs\Xmas11.Comm.Devices.MPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Comm.HartProtocal">
+      <HintPath>..\..\Libs\Xmas11.Comm.HartProtocal.dll</HintPath>
+    </Reference>
+    <Reference Include="Xmas11.Domain">
+      <HintPath>..\..\Libs\Xmas11.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
