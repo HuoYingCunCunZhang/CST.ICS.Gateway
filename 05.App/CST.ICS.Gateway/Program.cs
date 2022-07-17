@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using CST.ICS.Gateway.Common.Helpers;
 using Microsoft.Extensions.FileProviders;
 using Serilog;
 using Serilog.Events;
@@ -32,11 +33,29 @@ namespace CST.ICS.Gateway
                 })
                 .ConfigureContainer<ContainerBuilder>((context, builder) =>
                 {
-                    Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyName(new AssemblyName("CST.ICS.Gateway"));
-                    builder.RegisterAssemblyTypes(assembly)
-                    .Where(cc => cc.Name.EndsWith("Engine"))
-                    .SingleInstance()
-                    .AsImplementedInterfaces();
+                    //Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyName(new AssemblyName("CST.ICS.Gateway"));
+                    //注册Engin
+                    var assemblys = ReflectionHelper.GetAllAssemblies("","Gateway");
+                    foreach (var assembly in assemblys)
+                    {
+                        Console.WriteLine(assembly.FullName);
+                        builder.RegisterAssemblyTypes(assembly)
+                        .Where(cc => cc.Name.EndsWith("Engine") )
+                        .PropertiesAutowired() //如果使用属性注入的话加上属性注入特性
+                        .SingleInstance()
+                        .AsImplementedInterfaces();
+                    }
+
+                    assemblys = ReflectionHelper.GetAllAssemblies("CST.ICS", "Device");
+                    foreach (var assembly in assemblys)
+                    {
+                        Console.WriteLine(assembly.FullName);
+                        builder.RegisterAssemblyTypes(assembly)
+                        .Where(cc => cc.Name.EndsWith("_Device"))
+                        //.InstancePerDependency() //瞬时
+                        .InstancePerLifetimeScope()
+                        .AsImplementedInterfaces();
+                    }
                     builder.RegisterType<PhysicalFileProvider>().As<IFileProvider>().WithParameter(new TypedParameter(typeof(string), AppDomain.CurrentDomain.BaseDirectory)); ;
 
                 })

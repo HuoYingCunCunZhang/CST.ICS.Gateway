@@ -18,15 +18,15 @@ namespace CST.ICS.Gateway
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var contents = _fileProvider.GetDirectoryContents("/");
-                if(contents.Count()>0)
-                {
-                    foreach (var file in contents)
-                    {
-                        _logger.LogInformation("文件名{0}", file.Name);
-                    }
-                }
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                //var contents = _fileProvider.GetDirectoryContents("/");
+                //if(contents.Count()>0)
+                //{
+                //    foreach (var file in contents)
+                //    {
+                //        _logger.LogInformation("文件名{0}", file.Name);
+                //    }
+                //}
+                //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await Task.Delay(1000, stoppingToken);
             }
         }

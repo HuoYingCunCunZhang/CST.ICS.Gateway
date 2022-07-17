@@ -23,4 +23,10 @@
   <ItemGroup>
     <Folder Include="log\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj" />
+    <ProjectReference Include="..\..\03.Device\CST.ICS.Gateway.Device\CST.ICS.Gateway.Device.csproj" />
+    <ProjectReference Include="..\..\03.Device\CST.ICS.Gateway.IDevice\CST.ICS.Gateway.IDevice.csproj" />
+  </ItemGroup>
 </Project>
