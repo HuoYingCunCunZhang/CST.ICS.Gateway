@@ -1,4 +1,5 @@
 ﻿using CST.ICS.Gateway.Common;
+using CST.ICS.Gateway.IService;
 using CST.ICS.Gateway.Model;
 using GDZ9.Dto.ICS.Param;
 using GDZ9.Model.ICS.Business;
@@ -12,7 +13,7 @@ using System.Text;
 
 namespace CST.ICS.Gateway.Service
 {
-    public class MQService
+    public class MQService:IMQService
     {
         private readonly IOptionsMonitor<TopicSet> _mqttTopic;
         private readonly IOptionsMonitor<GateWayInfo> _gatewayInfo;
@@ -100,7 +101,7 @@ namespace CST.ICS.Gateway.Service
         /// 初始化MQTT客户端
         /// </summary>
         /// <returns></returns>
-        public async Task InitAsync()
+        public async Task InitMqttClientAsync()
         {
             // 创建连接
             var isConnect = await ConnectAsync();

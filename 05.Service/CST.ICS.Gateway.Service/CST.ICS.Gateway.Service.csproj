@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj" />
     <ProjectReference Include="..\..\02.Model\CST.ICS.Gateway.Model\CST.ICS.Gateway.Model.csproj" />
+    <ProjectReference Include="..\CST.ICS.Gateway.IService\CST.ICS.Gateway.IService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

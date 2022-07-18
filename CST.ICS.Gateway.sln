@@ -23,21 +23,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Service", "05.Service", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway", "06.App\CST.ICS.Gateway\CST.ICS.Gateway.csproj", "{F43A7921-3EC6-4360-9B84-24CFD46B1165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.IService", "05.Service\CST.ICS.Gateway.IService\CST.ICS.Gateway.IService.csproj", "{88E611DF-FFA1-4A61-918C-AD559774C7D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.IService", "05.Service\CST.ICS.Gateway.IService\CST.ICS.Gateway.IService.csproj", "{88E611DF-FFA1-4A61-918C-AD559774C7D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Service", "05.Service\CST.ICS.Gateway.Service\CST.ICS.Gateway.Service.csproj", "{7F5AEC64-A2D8-4BF9-B77E-547F7D77A1EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Service", "05.Service\CST.ICS.Gateway.Service\CST.ICS.Gateway.Service.csproj", "{7F5AEC64-A2D8-4BF9-B77E-547F7D77A1EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Model", "02.Model\CST.ICS.Gateway.Model\CST.ICS.Gateway.Model.csproj", "{83EAD7EA-9F0D-4E91-9A82-E141A51624EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Model", "02.Model\CST.ICS.Gateway.Model\CST.ICS.Gateway.Model.csproj", "{83EAD7EA-9F0D-4E91-9A82-E141A51624EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Common", "01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj", "{133BB9D4-BF9A-40EA-8C4C-489DC5628462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Common", "01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj", "{133BB9D4-BF9A-40EA-8C4C-489DC5628462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Pressure.ICommand", "04.Command\CST.ICS.Gateway.Pressure.ICommand\CST.ICS.Gateway.Pressure.ICommand.csproj", "{465AAEFC-E25E-4A65-9CE0-AC51E029EC3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Pressure.ICommand", "04.Command\CST.ICS.Gateway.Pressure.ICommand\CST.ICS.Gateway.Pressure.ICommand.csproj", "{465AAEFC-E25E-4A65-9CE0-AC51E029EC3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Pressure.Command", "04.Command\CST.ICS.Gateway.Pressure.Command\CST.ICS.Gateway.Pressure.Command.csproj", "{9AC4B34B-C46A-4573-BA9D-7F87C06EC8C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Pressure.Command", "04.Command\CST.ICS.Gateway.Pressure.Command\CST.ICS.Gateway.Pressure.Command.csproj", "{9AC4B34B-C46A-4573-BA9D-7F87C06EC8C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Pressure.IDevice", "03.Device\CST.ICS.Gateway.Pressure.IDevice\CST.ICS.Gateway.Pressure.IDevice.csproj", "{209ED0C7-C02D-4A15-8AB6-AB4B0B8529B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Pressure.IDevice", "03.Device\CST.ICS.Gateway.Pressure.IDevice\CST.ICS.Gateway.Pressure.IDevice.csproj", "{209ED0C7-C02D-4A15-8AB6-AB4B0B8529B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Pressure.Device", "03.Device\CST.ICS.Gateway.Pressure.Device\CST.ICS.Gateway.Pressure.Device.csproj", "{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CST.ICS.Gateway.Pressure.Device", "03.Device\CST.ICS.Gateway.Pressure.Device\CST.ICS.Gateway.Pressure.Device.csproj", "{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07.Test", "07.Test", "{62A3BD29-7C1F-4E8D-ACA9-07E09D48B369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CST.ICS.Gateway.Test", "07.Test\CST.ICS.Gateway.Test\CST.ICS.Gateway.Test.csproj", "{CFD35CA0-B03B-4A80-B4E3-48437171F481}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,10 @@ Global
 		{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD35CA0-B03B-4A80-B4E3-48437171F481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD35CA0-B03B-4A80-B4E3-48437171F481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD35CA0-B03B-4A80-B4E3-48437171F481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD35CA0-B03B-4A80-B4E3-48437171F481}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{9AC4B34B-C46A-4573-BA9D-7F87C06EC8C7} = {9B029CE1-9A77-425F-9663-DD51E7760C7D}
 		{209ED0C7-C02D-4A15-8AB6-AB4B0B8529B2} = {E906C5C8-91ED-4599-9E2E-501F26B5F6D1}
 		{FC82FB07-A0B7-4C5B-8EBD-FE9FCEC05169} = {E906C5C8-91ED-4599-9E2E-501F26B5F6D1}
+		{CFD35CA0-B03B-4A80-B4E3-48437171F481} = {62A3BD29-7C1F-4E8D-ACA9-07E09D48B369}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7423CFF4-9260-4C4E-B80D-8720E35B758C}
