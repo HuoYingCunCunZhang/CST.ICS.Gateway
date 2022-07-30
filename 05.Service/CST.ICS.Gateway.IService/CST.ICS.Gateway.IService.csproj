@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,5 +9,15 @@
   <ItemGroup>
     <PackageReference Include="MQTTnet" Version="4.0.2.221" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GDZ9.Model.ICS.Param">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Param.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy  /y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)06.App\CST.ICS.Gateway\bin\Debug\net6.0\&quot; " />
+  </Target>
 
 </Project>

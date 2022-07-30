@@ -1,5 +1,6 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using CST.ICS.Gateway.Model;
 using Microsoft.Extensions.FileProviders;
 using MQTTnet;
 using MQTTnet.Client;
@@ -20,7 +21,7 @@ namespace CST.ICS.Gateway
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .ConfigureServices((contex, services) =>
                 {
-                    services.Configure<Topic>(contex.Configuration.GetRequiredSection("Topic"));
+                    services.Configure<TopicSet>(contex.Configuration.GetRequiredSection("TopicSet"));
                     
                 })
                 .ConfigureContainer<ContainerBuilder>((context, builder) =>

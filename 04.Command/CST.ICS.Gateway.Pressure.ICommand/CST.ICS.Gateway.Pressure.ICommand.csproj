@@ -15,4 +15,8 @@
     </Reference>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy  /y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)06.App\CST.ICS.Gateway\bin\Debug\net6.0\&quot; " />
+  </Target>
+
 </Project>

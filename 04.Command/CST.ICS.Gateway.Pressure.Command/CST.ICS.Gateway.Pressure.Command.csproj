@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -19,5 +19,9 @@
       <HintPath>..\..\Libs\Xmas11.Domain.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy  /y &quot;$(TargetPath)&quot; &quot;$(SolutionDir)06.App\CST.ICS.Gateway\bin\Debug\net6.0\&quot; " />
+  </Target>
 
 </Project>

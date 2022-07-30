@@ -92,7 +92,8 @@ namespace CST.ICS.Gateway.Service
             }
             foreach (var topic in topics)
             {
-                var options = new MqttClientSubscribeOptionsBuilder().WithTopicFilter(builder => builder.WithTopic("").WithNoLocal(true)).Build();
+                var topicStr = string.Format(topic, _gatewayInfo.CurrentValue.ToolSN, _gatewayInfo.CurrentValue.GateWaySN);
+                var options = new MqttClientSubscribeOptionsBuilder().WithTopicFilter(builder => builder.WithTopic(topicStr).WithNoLocal(true)).Build();
                 await Client.SubscribeAsync(options);
             }
         }

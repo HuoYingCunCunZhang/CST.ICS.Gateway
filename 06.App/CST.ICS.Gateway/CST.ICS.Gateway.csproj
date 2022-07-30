@@ -23,5 +23,20 @@
 
   <ItemGroup>
     <Folder Include="log\" />
+    <Folder Include="log\Warning\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01.Common\CST.ICS.Gateway.Common\CST.ICS.Gateway.Common.csproj" />
+    <ProjectReference Include="..\..\02.Model\CST.ICS.Gateway.Model\CST.ICS.Gateway.Model.csproj" />
+    <ProjectReference Include="..\..\05.Service\CST.ICS.Gateway.IService\CST.ICS.Gateway.IService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GDZ9.Model.ICS.Param">
+      <HintPath>..\..\Libs\GDZ9.Model.ICS.Param.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 </Project>

@@ -1,20 +1,27 @@
+using CST.ICS.Gateway.IService;
+using GDZ9.Dto.ICS.Param;
 using Microsoft.Extensions.Options;
 
 namespace CST.ICS.Gateway
 {
+    /// <summary>
+    /// 设备扫描引擎
+    /// </summary>
     public class ScanDeviceEngine : BackgroundService
     {
         private readonly ILogger<ScanDeviceEngine> _logger;
-        private readonly IOptionsMonitor<Topic> _topic;
+        private readonly IOptionsMonitor<GateWayInfo> _gatewayInfo;
+        private readonly IServiceProvider _serviceProvider;
+        private readonly IMQService _mqService;
         public ScanDeviceEngine(ILogger<ScanDeviceEngine> logger,
-            IOptionsMonitor<Topic> topic)
+            IOptionsMonitor<GateWayInfo> gatewayInfo,
+            IServiceProvider serviceProvider,
+            IMQService mqService)
         {
             _logger = logger;
-            _topic = topic;
-            _topic.OnChange(t =>
-            {
-                Console.WriteLine($"配置更新了，最新的值是:{t.ENV}");
-            });
+            _gatewayInfo = gatewayInfo;
+            _serviceProvider = serviceProvider;
+            _mqService = mqService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -22,10 +29,8 @@ namespace CST.ICS.Gateway
             while (!stoppingToken.IsCancellationRequested)
             {
 
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                _logger.LogError("ENV:{0}", _topic.CurrentValue.ENV);
-                _logger.LogWarning("UUT:{0}", _topic.CurrentValue.UUT);
-                _logger.LogDebug("UUT:{0}", _topic.CurrentValue.UUT);
+                
+                
                 await Task.Delay(1000, stoppingToken);
             }
         }
